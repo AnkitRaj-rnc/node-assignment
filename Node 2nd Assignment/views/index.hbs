@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/style.css">
+    <title>Portfolio Page</title>
+</head>
+<body> 
+    <h1>Portfolio Page</h1>
+    {{>header}}
+    <div class="container mt-4">
+        <p class="paragraph" style="font-size: 20px; color:rgb(27, 14, 139)">
+            This is an example of  <strong> Dynamin Webpage</strong> . The name that is send across to the end point is added to
+            the page that is send back as a response from API
+        </p>
+        <p class="paragraph" style="font-size:20px; color:rgb(27, 14, 139)">
+             In this  page <strong> name of the creator </strong> of the page is  send back as response which is 
+            taken in <strong> req.query </strong>. The only thing dynamic in this page is creator 
+            <strong>name</strong>
+        </p>
+        <p style="font-size:30px; color:rgb(56, 1, 206);">
+             Created By :<span style="color: rgb(45, 13, 230);"> <strong> <u> {{name}} </u></strong></span>
+        </p>
+    </div>
+</body>
+</html>
